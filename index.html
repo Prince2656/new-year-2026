@@ -70,6 +70,26 @@
             box-shadow: 0 0 20px #a855f7;
         }
 
+        .download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #a855f7;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(168,85,247,0.8);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(168,85,247,1);
+}
+
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
@@ -111,10 +131,16 @@
         <div class="qr">
             <p>📷 PhonePe QR Scan kare:</p>
             <img src="phonepe-qr.png" alt="PhonePe QR Code">
+            <br><br>
+
+    <a href="phonepe-qr.png" download class="download-btn">
+        ⬇️ QR Download kare
+    </a>
         </div>
     </div>
 
 </body>
 </html>
+
 
 
